@@ -4,7 +4,7 @@ const router = Router()
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Flights Home Page' })
+  res.render('index', { title: 'Home Page' })
 })
 
 export { 
