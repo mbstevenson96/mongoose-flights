@@ -1,4 +1,5 @@
 <%- include('../partials/html-head') %> 
+<link rel="stylesheet" href="/stylesheets/flights/index.css" />
 <%- include('../partials/nav') %> 
 
 
@@ -22,7 +23,7 @@
             <td><%= flight.departs %></td>
             <td>
               <form action="/flights/<%= flight._id %>?_method=DELETE" method="POST">
-                <button>X</button>
+                <button>Remove Flight</button>
               </form>
             </td>
           </tr>
