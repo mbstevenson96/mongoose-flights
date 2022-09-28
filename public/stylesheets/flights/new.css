@@ -17,3 +17,30 @@ form > button {
   margin-left: auto;
   font-size: 22px;
 }
+
+label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+input {
+  height: 30px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+button {
+  height: 50px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#select-meal {
+  height: 50px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
