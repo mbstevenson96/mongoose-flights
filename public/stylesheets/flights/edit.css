@@ -17,3 +17,10 @@ form > button {
   margin-left: auto;
   font-size: 22px;
 }
+
+button {
+  height: 50px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}

@@ -11,7 +11,7 @@
     <p>Flight No.: <%= flight.flightNo %></p>
     <p>Departs: <%= flight.departs %></p>
     <a href="/flights/<%= flight._id %>/edit">
-    <button>Edit Flight Details</button></a>
+    <button id="edit-flight-btn">Edit Flight Details</button></a>
     <div>Meals:</div>
     <ul>
       <% flight.name.forEach(flightMeal => { %>
@@ -20,12 +20,12 @@
     </ul>
   </section>
   <form id="add-per-to-meal" action="/flights/<%= flight._id %>/meals" method="POST">
-    <select name="mealId">
+    <select id="meal-select-details" name="mealId">
       <% meals.forEach(meal => { %>
         <option value="<%= meal._id %>"><%= meal.name %></option>
       <% }) %>
     </select>
-    <button type="submit">Add Meal</button>
+    <button id="add-meal-details-btn" type="submit">Add Meal</button>
   </form>
   <h2>Tickets</h2>
   <form 
@@ -34,24 +34,24 @@
     method="POST"
   >
     <label for="content-textarea">Seat:</label>
-    <input type="text" name="seat" value="<%= flight.seat %>" required pattern="[A-F][1-9]\d?">
+    <input id="seat-input" type="text" name="seat" value="<%= flight.seat %>" required pattern="[A-F][1-9]\d?">
     <label for="rating-select">Price:</label>
-    <input type="text" name="price" value="<%= flight.price %>">
-    <button type="submit">Add Ticket</button>
+    <input id="price-input" type="text" name="price" value="<%= flight.price %>">
+    <button id="add-ticket-btn" type="submit">Add Ticket</button>
   </form>
   <% if (flight.tickets.length) { %>
-    <table>
+    <table id="ticket-info">
       <thead>
         <tr>
-          <th>Seat</th>
-          <th>Price</th>
+          <th class="ticket-seat">Seat</th>
+          <th class="ticket-price">Price</th>
         </tr>
       </thead>
       <tbody>
         <% flight.tickets.forEach(flight => { %>
           <tr>
-            <td><%= flight.seat %></td>
-            <td>$<%= flight.price %></td>
+            <td class="ticket-seat"><%= flight.seat %></td>
+            <td class="ticket-price">$<%= flight.price %></td>
           </tr>
         <% }) %>
       </tbody>

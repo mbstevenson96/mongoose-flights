@@ -8,31 +8,66 @@ li {
   font-weight: bold;
 }
 
-table {
-  font-size: 20px;
-}
-
-table thead th {
-  padding: 5px;
-  border-bottom: 2px solid #424748;
-}
-
-table td {
-  padding: 10px;
-  text-align: center;
-}
-
 form * {
   padding: 5px;
   border-radius: 5px;
 }
 
-section {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 16px;
-}
-
 section div:nth-child(even) {
   font-weight: bold;
+}
+
+#edit-flight-btn {
+  height: 30px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+#meal-select-details {
+  height: 30px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#add-meal-details-btn {
+  height: 30px;
+  width: 80px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#seat-input,
+#price-input {
+  height: 30px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#seat-input {
+  margin-right: 30px;
+}
+
+#add-ticket-btn {
+  height: 50px;
+  background: #62b1cf;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#ticket-info {
+  margin: 30px;
+}
+
+.ticket-seat {
+  padding-right: 20px;
+}
+
+.ticket-price {
+  padding-left: 20px;
 }
