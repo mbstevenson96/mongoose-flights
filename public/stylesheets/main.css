@@ -14,10 +14,11 @@ html {
 }
 
 body {
-  background-color: gray;
-  /* Use a system font, if none are available use an available sans-sarif font */
+  background-image: url(https://images.unsplash.com/photo-1505869935718-8f8a79f2d4ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyb3BpY2FsJTIwdHJhdmVsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
-  color: #424748;
+  color: #d2a128;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr;
@@ -32,7 +33,7 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e8eceb;
+  background-color: #193c58;
   padding: 20px;
 }
 
@@ -42,7 +43,7 @@ body > main h1:first-child {
 
 body > nav {
   grid-area: nav;
-  background-color: #b8c0c2;
+  background-color: #83c2a3;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -74,6 +75,14 @@ nav > a:hover {
 
 nav > a.active {
   color: white;
+}
+
+#main-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #62b1cf;
+  font-size: 75px;
 }
 
 .fas::before {

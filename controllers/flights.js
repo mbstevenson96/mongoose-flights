@@ -11,7 +11,7 @@ function index(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/flights')
   })
 }
 
@@ -50,7 +50,7 @@ function show(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/flights')
   })
 }
 
@@ -61,7 +61,7 @@ function deleteFlight(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/flights')
   })
 }
 
@@ -75,7 +75,7 @@ function edit(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/flights')
   })
 }
 
@@ -86,7 +86,7 @@ function update(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/flights')
   })
 }
 
@@ -100,12 +100,12 @@ function createTicket(req, res) {
     })
     .catch(err => {
       console.log(err)
-      res.redirect('/')
+      res.redirect('/flights')
     })
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/flights')
   })
 }
 
